@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #3e4a34;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+       header {
+            background-color: #333;
+            padding: 20px 60px;
+        }
+
+        header nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        section {
+             padding: 60px;
+        }
+       
+        .contato   {
+            background-color: #3e4a34;
+            color: white;
+            padding: 60px;
+            display: flex;
+            align-items: center;
+            
+        }
+
+        .contato-text {
+           max-width: 500px;
+        }
+
+        .contato h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 60px;
+            line-height: 1.2;
+        }
+
+        form {
+         border-left: 1px solid transparent;
+        }
+
+        fieldset {
+            border: 2px solid #F6EEE1;
+            padding: 15px;
+            margin-bottom: 15px;
+            width: 500px;
+        }
+        
+        label {
+            display: inline-block;
+            width: 100px;
+            margin-bottom: 10px;
+            vertical-align: top;
+        }
+
+        textarea {
+            background-color: #F6EEE1;
+            border: none;
+            padding: 5px;
+            width: 350px;
+            height: 50px;
+            resize: none;
+        }
+
+        input[type="text"]{
+            background-color: #F6EEE1;
+            border: none;
+            padding: 5px;
+            width: 350px;
+            margin-bottom: 10px;
+        }
+
+
+        input[type="email"] {
+            background-color: #F6EEE1;
+            border: none;
+            padding: 5px;
+            width: 350px;
+            
+        }
+
+        button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 5px 20px;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 5px 40px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        
+    </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="objetivos.html">Objetivos</a>
+      <a href="projetos.html">Projetos</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+</header>
+<section class="contato">
+    <div class="formulario-container">
+    <h2>Contato</h2>
+        <form>
+        <fieldset>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome"><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+        </fieldset>
+
+        <fieldset>
+            <label for="frase">Sua mensagem</label>
+            <textarea id="frase" name="frase"></textarea>
+        </fieldset>
+
+        <button type="submit">enviar</button>
+        </form>
+    </div>
+</section>
+
+    <footer id="contact">
+        <p>Pamela da Silva Machado</p>
+    </footer>
+</body>
+</html>
